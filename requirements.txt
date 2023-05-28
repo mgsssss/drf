@@ -5,6 +5,7 @@ backcall==0.2.0
 certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_477u68wvzm/croot/certifi_1671487773341/work/certifi
 decorator==5.1.1
 Django==4.1.7
+djangorestframework-jwt==1.11.0
 executing==1.2.0
 ipython==8.13.2
 jedi==0.18.2
@@ -16,6 +17,7 @@ prompt-toolkit==3.0.38
 ptyprocess==0.7.0
 pure-eval==0.2.2
 Pygments==2.15.1
+PyJWT==1.7.1
 six==1.16.0
 sqlparse==0.4.3
 stack-data==0.6.2

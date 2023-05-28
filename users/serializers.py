@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User # User model
 from django.contrib.auth.password_validation import validate_password # Django password 검증 도구
+from .models import Profile
 
 from rest_framework import serializers
 from rest_framework.authtoken.models import Token # Token model
@@ -63,3 +64,10 @@ class LoginSerializer(serializers.Serializer):
         raise serializers.ValidationError(
             {"error": "Unable to log in with provided credentials"}
         )
+    
+class ProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Profile
+        fields = ['nickname', 'position', 'subject', 'image']
+
+    
