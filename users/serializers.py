@@ -9,6 +9,8 @@ from django.contrib.auth import authenticate # Authenticate model
 # DJango의 기본 authenticate 함수, 우리가 설정한 DefaultAuthBackend인 TokenAuth 방식으로
 # 유저를 인증해줌.
 
+from rest_framework.exceptions import ValidationError
+
 class RegisterSerializer(serializers.ModelSerializer): # 회원가입 serializer
     email = serializers.EmailField(
         required=True,
